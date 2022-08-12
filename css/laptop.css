@@ -2,6 +2,12 @@
   margin: 0px;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .body {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,7 +37,7 @@ section .container {
     url(../images/banner.jpg);
   background-size: cover;
   height: 50vh;
-  width: 100%;
+  max-width: 1200px;
 }
 
 .banner_text {
@@ -349,7 +355,7 @@ section .container {
   row-gap: 16px;
 }
 
-.wed ,
+.wed,
 .Javascript {
   border-bottom: 0.2px solid #d6c08d;
 }
@@ -407,10 +413,10 @@ section .container {
   height: 40%;
 }
 
-.container-fix {
-  width: 80%;
+/* .container-fix {
+  width: 100%;
   margin: 0 auto;
-}
+} */
 
 .da-title {
   width: 70%;
@@ -470,6 +476,13 @@ section .container {
   display: flex;
 }
 
+.lap-fix1{
+  width: 35%;
+}
+.lap-fix2{
+  width: 65%;
+}
+
 /* button icon */
 .button-icon li {
   margin-left: 24px;
@@ -483,13 +496,21 @@ section .container {
 }
 
 .button-icon ul {
+  height: 80px;
   width: 45%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .button-icon {
-  font-size: 24px;
+  font-size: 32px;
   color: rgba(68, 68, 248, 0.6);
+}
+
+.icon-github-circled{
+  font-size: 35px;
 }
 
 #button-text {
@@ -501,6 +522,7 @@ section .container {
 
 .plus {
   height: 800px;
+  margin-top: 24px;
   background-color: rgba(187, 243, 225, 0.3);
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

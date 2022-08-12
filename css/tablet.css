@@ -1,6 +1,10 @@
 * {
   margin: 0px;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .body {
   max-width: 1180px;
@@ -35,10 +39,10 @@ section .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/banner.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: 100%;
+  background-repeat: no-repeat;
   height: 70vh;
-  width: 110%;
+  width: 150%;
 }
 
 .banner_text {
@@ -352,7 +356,7 @@ section .container {
 /* chứng chỉ -- giải thưởng */
 .cc-gt-content {
   width: 100%;
-  margin-top: 48px;
+  margin-top: 32px;
   height: auto;
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -421,7 +425,7 @@ section .container {
 /* dự án */
 .da-content-main {
   width: 100%;
-  margin: 0 12px;
+  margin: 24px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -490,8 +494,11 @@ section .container {
   display: flex;
 }
 
-.tablet-fix {
-  padding-left: 20px;
+.lap-fix1{
+  width: 20%;
+}
+.lap-fix2{
+  width: 80%;
 }
 
 /* button icon */
@@ -507,14 +514,21 @@ section .container {
 }
 
 .button-icon ul {
-  padding: 30px 0;
-  width: 45%;
-  margin: 0 auto;
+  height: 80px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
 .button-icon {
-  font-size: 24px;
+  font-size: 28px;
   color: rgba(68, 68, 248, 0.6);
+}
+.icon-github-circled {
+  font-size: 30px;
 }
 
 #button-text {
@@ -526,6 +540,7 @@ section .container {
 
 .plus {
   height: auto;
+  margin-top: 32px;
   background-color: rgba(187, 243, 225, 0.3);
   display: grid;
   grid-template-columns: 1fr;
@@ -616,7 +631,7 @@ section .container {
   align-items: center;
 }
 
-.TimeLine-content  {
+.TimeLine-content {
   padding-left: 0;
   margin-left: 32px;
   padding-bottom: 12px;
